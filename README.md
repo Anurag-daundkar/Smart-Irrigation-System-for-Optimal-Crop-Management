@@ -22,7 +22,7 @@ An IoT-powered system to automate and optimize crop irrigation using soil moistu
 **Flash Arduino Code:**
   - Upload NodeMCU_1_MainController.ino to the main NodeMCU.
   - Upload NodeMCU_2_GSM_LCD_Controller.ino to the second NodeMCU.
-  - Also not where ever you see long ---------- their you need to make changes
+  - Also where ever you see long ---------- their you need to make changes
     
     
 **Setup Firebase:**
