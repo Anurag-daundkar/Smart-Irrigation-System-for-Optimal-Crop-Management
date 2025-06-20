@@ -1,0 +1,62 @@
+
+---
+
+## 📟 NodeMCU Roles
+
+| **NodeMCU** | **Microcontroller**            | **Responsibilities**                                                                                             |
+|-------------|--------------------------------|------------------------------------------------------------------------------------------------------------------|
+| **1**       | `NodeMCU_1_MainController`     | - Reads soil moisture sensors (4 lines) - Controls water pumps - Water level sensing - Firebase + - Scheduler logic |
+| **2**       | `NodeMCU_2_GSM_LCD_Controller` | - Sends SMS via GSM module - Displays current mode/alerts on LCD - Reads Firebase `/MessageValue` and `/MobileNumber` |
+
+---
+
+## 🔌 Pin Connection Tables
+
+### 📟 NodeMCU 1 – Main Controller
+
+| **Component**             | **GPIO Pin** | **NodeMCU Label** | **Direction** | **Function**                    |
+|---------------------------|--------------|-------------------|---------------|---------------------------------|
+| Soil Moisture Sensor 1    | GPIO16       | D0                | Input         | Line 1 moisture                 |
+| Soil Moisture Sensor 2    | GPIO4        | D2                | Input         | Line 2 moisture                 |
+| Soil Moisture Sensor 3    | GPIO0        | D3                | Input         | Line 3 moisture                 |
+| Soil Moisture Sensor 4    | GPIO2        | D4                | Input         | Line 4 moisture                 |
+| Water Level Sensor        | A0           | A0                | Analog Input  | Water tank level monitoring     |
+| Pump 1 Relay              | GPIO5        | D1                | Output        | Controls Pump 1                 |
+| Pump 2 Relay              | GPIO14       | D5                | Output        | Controls Pump 2                 |
+| Pump 3 Relay              | GPIO12       | D6                | Output        | Controls Pump 3                 |
+| Pump 4 Relay              | GPIO13       | D7                | Output        | Controls Pump 4                 |
+
+---
+
+### 📲 NodeMCU 2 – GSM + LCD Controller
+
+| **Component**             | **GPIO Pin** (via SoftwareSerial) | **Physical Pin** | **Direction** | **Function**                    |
+|---------------------------|-----------------------------------|------------------|---------------|---------------------------------|
+| GSM RX                    | Virtual TX (GPIO3)                | Pin 2            | Output        | Send AT commands to GSM module  |
+| GSM TX                    | Virtual RX (GPIO1)                | Pin 3            | Input         | Receive GSM responses           |
+| LCD SDA (I2C Data)        | GPIO4                             | D2               | I2C Data      | LCD data line                   |
+| LCD SCL (I2C Clock)       | GPIO5                             | D1               | I2C Clock     | LCD clock line                  |
+
+> *Note: Pins D1 and D2 are reused in both boards, but separation of roles avoids conflicts.*
+
+---
+
+## **Dependencies**
+
+- **Libraries for Arduino:**
+  - `Firebase_ESP8266`
+  - `NTPClient`
+  - `WiFiUdp`
+  - `LiquidCrystal_I2C`
+  - `SoftwareSerial`
+
+- **Hardware:**
+  - 2 × NodeMCU ESP8266
+  - 4 × Soil Moisture Sensors
+  - 4 × Relay Modules
+  - 1 × Water Level Sensor
+  - 1 × GSM Module (SIM800L recommended)
+  - 1 × LCD (16x2) with I2C
+  - Power supply for field deployment
+
+---
