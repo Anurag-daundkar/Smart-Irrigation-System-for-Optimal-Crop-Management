@@ -19,22 +19,22 @@ An IoT-powered system to automate and optimize crop irrigation using soil moistu
 
 ## ⚙️ How to Use
 
-  # Flash Arduino Code:
-    - Upload NodeMCU_1_MainController.ino to the main NodeMCU.
-    - Upload NodeMCU_2_GSM_LCD_Controller.ino to the second NodeMCU.
-    - Also not where ever you see long ---------- their you need to make changes
+# Flash Arduino Code:
+  - Upload NodeMCU_1_MainController.ino to the main NodeMCU.
+  - Upload NodeMCU_2_GSM_LCD_Controller.ino to the second NodeMCU.
+  - Also not where ever you see long ---------- their you need to make changes
     
   
-  # Setup Firebase:
-    - Create a Firebase project and structure it based on firebase_structure.json/png in /Firebase_Config/.
+# Setup Firebase:
+  - Create a Firebase project and structure it based on firebase_structure.json/png in /Firebase_Config/.
   
-  # Use the Mobile App:
-    - Import Smart_Irrigation_System (2).aia into MIT App Inventor.
-    - Replace Firebase API key with your api key
+# Use the Mobile App:
+  - Import Smart_Irrigation_System (2).aia into MIT App Inventor.
+  - Replace Firebase API key with your api key
   
-  # Power up:
-    -Connect sensors, relays, and modules as per the circuit.
-    -Ensure Wi-Fi credentials and Firebase API keys are correctly set in the Arduino code.
+# Power up:
+  -Connect sensors, relays, and modules as per the circuit.
+  -Ensure Wi-Fi credentials and Firebase API keys are correctly set in the Arduino code.
   
-  # Hardware Connections
-    - Connections are give in "Circuit Diagram and Pin Info" folder
+# Hardware Connections
+  - Connections are give in "Circuit Diagram and Pin Info" folder
