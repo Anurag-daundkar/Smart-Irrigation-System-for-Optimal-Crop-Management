@@ -5,13 +5,13 @@
 #include <LiquidCrystal_I2C.h>
 
 // WiFi credentials
-#define WIFI_SSID "OnePlus Nord CE 3 Lite 5G"
-#define WIFI_PASSWORD "yyyyyyyyyy"
+#define WIFI_SSID "YOUR WIFI"-----------------------------------------------------------------------------------------
+#define WIFI_PASSWORD "YOUR PASSWORD"---------------------------------------------------------------------------------
 
 // Firebase credentials
 #define FIREBASE_EMAIL "your-email@example.com"
 #define FIREBASE_PASSWORD "your-password"
-#define FIREBASE_API_KEY "AIzaSyBRSAAoh-CsH_-9ZOetcX-FZEwBetabg14" // Replace with your Firebase API key
+#define FIREBASE_API_KEY "Replace with your Firebase API key" ---------------------------------------------------
 
 // GSM setup using SoftwareSerial on pins 2 (RX), 3 (TX)
 SoftwareSerial gsm(2, 3); // RX, TX
@@ -115,7 +115,7 @@ void setup() {
 
   // Initialize Firebase
   config.api_key = FIREBASE_API_KEY;
-  config.database_url = "https://smart-irrigation-system-d2662-default-rtdb.firebaseio.com/";
+  config.database_url = "YOUR FIREBASE URL";------------------------------------------------------
   auth.user.email = FIREBASE_EMAIL;
   auth.user.password = FIREBASE_PASSWORD;
   Firebase.begin(&config, &auth);
