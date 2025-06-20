@@ -1,0 +1,92 @@
+{
+  "Smart_Irrigation_System": {
+    "Automatic_Feature": {
+      "Priority_Score_of_line1": {
+        "PumpStatus": "ON",
+        "Score": "35"
+      },
+      "Priority_Score_of_line2": {
+        "PumpStatus": "OFF",
+        "Score": "35"
+      },
+      "Priority_Score_of_line3": {
+        "PumpStatus": "OFF",
+        "Score": "33"
+      },
+      "Priority_Score_of_line4": {
+        "PumpStatus": "OFF",
+        "Score": "29"
+      },
+      "Status": "\"Stopped\""
+    },
+    "Display": {
+      "MessageValue": 1,
+      "MobileNumber": "\"9421911496\"",
+      "Mode": "Automatic Mode",
+      "Running": "1"
+    },
+    "Line1": {
+      "Crop": "\"Sugarcane\"",
+      "Soil": "\"Arid\"",
+      "Status": {
+        "PumpStatus": "\"OFF\"",
+        "Soil_Moisture": "Dry"
+      }
+    },
+    "Line2": {
+      "Crop": "\"Wheat\"",
+      "Soil": "\"RedSoil\"",
+      "Status": {
+        "PumpStatus": "\"OFF\"",
+        "Soil_Moisture": "Dry"
+      }
+    },
+    "Line3": {
+      "Crop": "\"Cotton\"",
+      "Soil": "\"BlackSoil\"",
+      "Status": {
+        "PumpStatus": "\"OFF\"",
+        "Soil_Moisture": "Dry"
+      }
+    },
+    "Line4": {
+      "Crop": "\"Millets\"",
+      "Soil": "\"Alluvial\"",
+      "Status": {
+        "PumpStatus": "\"OFF\"",
+        "Soil_Moisture": "Dry"
+      }
+    },
+    "Location": "\"pune\"",
+    "Manual_Feature": {
+      "Status": "\"Stopped\"",
+      "Status1": "\"Started\""
+    },
+    "Optimal_Feature": {
+      "Line1_crop_condition": "\"Moderate\"",
+      "Line2_crop_condition": "\"Moderate\"",
+      "Line3_crop_condition": "\"Dry\"",
+      "Line4_crop_condition": "\"Green\"",
+      "Priority_Score_of_line1": {
+        "PumpStatus": "OFF"
+      },
+      "Priority_Score_of_line2": {
+        "PumpStatus": "OFF"
+      },
+      "Priority_Score_of_line3": {
+        "PumpStatus": "ON"
+      },
+      "Priority_Score_of_line4": {
+        "PumpStatus": "OFF"
+      },
+      "Status": "\"Stopped\""
+    },
+    "Scheduler": {
+      "IntervalDays": "\"4\"",
+      "LastIrrigationDate": "\"May 17, 2025\""
+    },
+    "Temperature": "\"28.4℃\"",
+    "Water_Level": "9.38416",
+    "Weather": "\"Sunny\""
+  }
+}
