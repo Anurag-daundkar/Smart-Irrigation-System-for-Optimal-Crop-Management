@@ -164,7 +164,7 @@ void setup() {
 
   // Initialize Firebase configuration
   config.api_key = FIREBASE_API_KEY;
-  config.database_url = "https://smart-irrigation-system-d2662-default-rtdb.firebaseio.com/";
+  config.database_url = "YOUR FIREBASE URL";-----------------------------------------------------------------
 
   // Set up the authentication with email and password
   auth.user.email = FIREBASE_EMAIL;
