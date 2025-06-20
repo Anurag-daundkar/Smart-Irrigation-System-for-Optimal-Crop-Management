@@ -13,8 +13,8 @@
 using namespace std;
 
 // WiFi credentials
-#define WIFI_SSID "OnePlus Nord CE 3 Lite 5G"
-#define WIFI_PASSWORD "yyyyyyyyyy"
+#define WIFI_SSID "YOUR WIFI" --------------------------------------------------------------------------------
+#define WIFI_PASSWORD "YOUR PASSWORD"-------------------------------------------------------------------------
 
 WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP, "pool.ntp.org", 0, 60000);  // Adjust the server & offset as needed
@@ -36,10 +36,7 @@ int sensorValues[4];
 // Firebase credentials
 #define FIREBASE_EMAIL "your-email@example.com"
 #define FIREBASE_PASSWORD "your-password"
-#define FIREBASE_API_KEY "AIzaSyBRSAAoh-CsH_-9ZOetcX-FZEwBetabg14" // Replace with your Firebase API key
-
-unsigned long myChannelNumber = 2699344;
-const char * myWriteAPIKey = "FOWGBUE2N8R737UB";
+#define FIREBASE_API_KEY "Replace with your Firebase API key" --------------------------------------------------
 
 // Firebase objects
 FirebaseData firebaseData;
@@ -175,8 +172,6 @@ void setup() {
 
   // Initialize Firebase
   Firebase.begin(&config, &auth);
-
-
 
 
 
